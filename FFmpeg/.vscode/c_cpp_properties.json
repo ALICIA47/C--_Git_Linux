@@ -1,0 +1,18 @@
+{
+    "version": 4,
+    "configurations": [
+      {
+        "name": "Win-FFmpeg",
+        "includePath": [
+          "${workspaceFolder}/**",
+          "C:/diskD/FFmpeg/ffmpeg-8.0-full_build/bin"   // 头文件路径
+        ],
+        "defines": [],
+        "compilerPath": "C:/diskD/mingw64/bin/g++.exe",  // 或你安装的 MinGW
+        "cStandard": "c11",
+        "cppStandard": "c++20",
+        "intelliSenseMode": "windows-gcc-x64"
+      }
+    ]
+  }
+  
