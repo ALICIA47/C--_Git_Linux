@@ -15,6 +15,10 @@ public:
         if(amount>0){
             long long amountInCents=static_cast<long long>(amount*100);
             balance-=amountInCents;
+            //std::fixed 是一个 C++ 的流操纵器（manipulator），
+            //用于设置流对象的浮点数格式标志为 std::ios_base::fixed，
+            //从而强制以定点表示法输出浮点数。它通过调用 ios_base::setf 方法，
+            //将 ios_base::fixed 标志应用于 ios_base::floatfield。
             std::cout<<"Withdraw"<<std::fixed<<std::setprecision(2)<<amount<<
             ",New Balance:"<<static_cast<double>(balance)/100<<std::endl;
         return true;
